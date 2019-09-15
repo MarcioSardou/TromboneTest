@@ -1,0 +1,28 @@
+$cor-menu-topo: red;
+/*menu topo*/
+
+.container {
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    background-color:$cor-menu-topo;
+}
+
+.img-logo{
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 0.8em;
+width: 100%;
+/*Falta centralizar logo*/
+}
+
+.menu-lista{
+    text-align: center;
+}
+
+.item-menu-lista{
+    display: inline-block;    
+    /*AFASTAR OS 2 DA PONTA COM O NTH CHILD NO ITEM DO MEIO*/
+}
+
