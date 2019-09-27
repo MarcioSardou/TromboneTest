@@ -3,29 +3,28 @@ $cor-menu-topo: purple;
 
 .container {
     position: fixed;
-    height: 15vh;
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color:$cor-menu-topo;
 
         &__img-logo{
-            display: flex;
             justify-content: center;
-            width: 100%;
-            height: 10vh;
+            position: relative;
+            display: flex;
+            margin: 20px;
+        
             img{
-                position: absolute;
-                top: 0;
-                right: 4vw;
-                width: 100vw;
-                height: 10vh;
+                height: 48px;
             }
         }  
 
         &__menu-lista{
             position: relative;
-            bottom: -5px;
-            height: 8vh;
             text-align: center;
+            padding-bottom: 8px;
+            width: 100%;
 
         
             .item-menu-lista{
@@ -33,7 +32,7 @@ $cor-menu-topo: purple;
                 font-size: 16px;    /*AFASTAR OS 2 DA PONTA COM O NTH CHILD NO ITEM DO MEIO*/
             }
             li:nth-child(2){
-                margin: 0 5vw 0 5vw;
+                margin: 0 10vw 0 10vw;
             }
         }
 
