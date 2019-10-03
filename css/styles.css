@@ -1,0 +1,40 @@
+@import url(./reset.css);
+/*menu topo*/
+.container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: purple; }
+  .container__img-logo {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin: 20px; }
+    .container__img-logo img {
+      height: 48px; }
+  .container__menu-lista {
+    position: relative;
+    text-align: center;
+    padding-bottom: 8px;
+    width: 100%; }
+    .container__menu-lista .item-menu-lista {
+      display: inline-block;
+      font-size: 16px;
+      /*AFASTAR OS 2 DA PONTA COM O NTH CHILD NO ITEM DO MEIO*/ }
+    .container__menu-lista li:nth-child(2) {
+      margin: 0 10vw 0 10vw; }
+
+.main {
+  position: relative;
+  top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px; }
+
+/*# sourceMappingURL=styles.css.map */
