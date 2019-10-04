@@ -98,7 +98,8 @@ table {
 
 main {
   background-color: #515376;
-  position: absolute;
+  height: 100vh;
+  padding-top: 140px;
 }
 
 /*
