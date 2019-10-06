@@ -4,13 +4,13 @@
   "description": "\"# TromboneTest\"",
   "main": "index.js",
   "devDependencies": {
-    "css-loader": "^3.2.0",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.3",
-    "style-loader": "^1.0.0"
+    "nodemon": "^1.19.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "build-css": "node-sass --include-path scss css/cerebro.scss  css/style.css",
+      "watch-css": "nodemon -e scss -x \"npm run build-css\" "
   },
   "repository": {
     "type": "git",
