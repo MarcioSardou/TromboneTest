@@ -1,18 +1,157 @@
-/* Error: expected "{".
- *    ,
- * 21 | >>>>>>> 10d744baa20fa8d1ddf592afac874715a9f3c780
- *    |                                                 ^
- *    '
- *   content.scss 21:49  @import
- *   cerebro.scss 3:9    root stylesheet */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 21 \2502  >>>>>>> 10d744baa20fa8d1ddf592afac874715a9f3c780\a    \2502                                                  ^\a    \2575 \a   content.scss 21:49  @import\a   cerebro.scss 3:9    root stylesheet';
-}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*menu topo*/
+/*
+|--------------------------------------------------------------------------
+| Trombone color schema
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| BREAKPOINTS
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| IMAGES
+|--------------------------------------------------------------------------
+*/
+.container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2C3ABE;
+  z-index: 1; }
+  .container__img-logo {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    margin: 20px; }
+    .container__img-logo img {
+      height: 48px; }
+  .container__menu-lista {
+    position: relative;
+    text-align: center;
+    padding-bottom: 8px;
+    width: 100%; }
+    .container__menu-lista .item-menu-lista {
+      display: inline-block;
+      font-size: 16px;
+      /*AFASTAR OS 2 DA PONTA COM O NTH CHILD NO ITEM DO MEIO*/ }
+    .container__menu-lista li:nth-child(2) {
+      margin: 0 10vw 0 10vw; }
+
+/*
+|--------------------------------------------------------------------------
+| Trombone color schema
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| BREAKPOINTS
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| IMAGES
+|--------------------------------------------------------------------------
+*/
+body {
+  background-color: #D3D3D3;
+  height: 720px;
+  background-image: linear-gradient(30deg, #708090, transparent);
+  background-repeat: no-repeat; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 130px;
+  height: 150px; }
+  .main__title {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    text-shadow: 1px 1px #fff; }
+  .main__form {
+    padding-top: 25px; }
+    .main__form .email {
+      width: 100%;
+      padding: 5px; }
+    .main__form .submit {
+      border: 0px;
+      background-color: #f1c40f;
+      border-radius: 2px;
+      margin-top: 15px;
+      font-size: 1em;
+      font-weight: 900;
+      text-transform: uppercase;
+      height: 30px;
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+      cursor: pointer; }
+    .main__form .submit:hover {
+      background-color: orange; }
+
+/*
+|--------------------------------------------------------------------------
+| Trombone color schema
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| BREAKPOINTS
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| IMAGES
+|--------------------------------------------------------------------------
+*/
+
+/*# sourceMappingURL=styles.css.map */
