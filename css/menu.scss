@@ -1,0 +1,42 @@
+/*menu topo*/
+@import './conf.scss';
+
+
+.container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:$cor-menu-topo;
+    z-index: 1;
+
+        &__img-logo{
+            justify-content: center;
+            position: relative;
+            display: flex;
+            margin: 20px;
+        
+            img{
+                height: 48px;
+            }
+        }  
+
+        &__menu-lista{
+            position: relative;
+            text-align: center;
+            padding-bottom: 8px;
+            width: 100%;
+
+        
+            .item-menu-lista{
+                display: inline-block;
+                font-size: 16px;    /*AFASTAR OS 2 DA PONTA COM O NTH CHILD NO ITEM DO MEIO*/
+            }
+            li:nth-child(2){
+                margin: 0 10vw 0 10vw;
+            }
+        }
+
+}
+
