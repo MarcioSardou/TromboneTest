@@ -1,0 +1,26 @@
+{
+  "name": "TromboneTest",
+  "version": "1.0.0",
+  "description": "\"# TromboneTest\"",
+  "main": "index.js",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.3",
+    "style-loader": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcioSardou/TromboneTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcioSardou/TromboneTest/issues"
+  },
+  "homepage": "https://github.com/MarcioSardou/TromboneTest#readme"
+}
