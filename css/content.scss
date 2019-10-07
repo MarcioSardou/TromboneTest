@@ -2,14 +2,12 @@
 
 body {
     background-color: $cor-tela;
-    height: 720px;
+    height: 960px;
     background-image: linear-gradient(30deg,#708090, transparent);
     background-repeat: no-repeat;
 }
 .main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-start;
     position: relative;
     top: 130px;
     height: 150px;
@@ -28,19 +26,12 @@ body {
             padding:5px;
         }
         .submit {
-            border: 0px;
-            background-color: $cor-botao;
-            border-radius: 2px;
+            @include btn;
             margin-top: 15px;
             font-size: 1em;
             font-weight: 900;
-            text-transform: uppercase;
             height: 30px;
-            //CENTER A BUTTON
-            width: 40%;
-            margin-left: 30%;
-            margin-right: 30%;
-            cursor: pointer;
+
         }
         .submit:hover {
             background-color: orange;
