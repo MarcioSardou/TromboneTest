@@ -7,11 +7,11 @@
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.3"
   },
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "build-css": "node-sass --include-path scss css/cerebro.scss  css/style.css",
-      "watch-css": "nodemon -e scss -x \"npm run build-css\" "
+    "build-css": "node-sass --include-path scss src/css/cerebro.scss  src/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" ",
+    "open": "reload -b src/ \"npm run watch-css\" "
   },
   "repository": {
     "type": "git",
