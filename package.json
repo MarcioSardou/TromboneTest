@@ -2,16 +2,15 @@
   "name": "TromboneTest",
   "version": "1.0.0",
   "description": "\"# TromboneTest\"",
-  "main": "index.js",
-  "devDependencies": {
+  "main": "index]]]]]]]]js",
+ "devDependencies": {
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss src/css/cerebro.scss  src/css/style.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\" ",
-    "open": "reload -b src/ \"npm run watch-css\" "
+    "watch-css": "nodemon -e scss -x \"npm run build-css\" "
   },
   "repository": {
     "type": "git",
@@ -23,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/MarcioSardou/TromboneTest/issues"
   },
-  "homepage": "https://github.com/MarcioSardou/TromboneTest#readme"
+  "homepage": "https://github.com/MarcioSardou/TromboneTest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
