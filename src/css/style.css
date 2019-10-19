@@ -1,0 +1,126 @@
+/*
+|--------------------------------------------------------------------------
+| Trombone color schema
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| BREAKPOINTS
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| MIXINS
+|--------------------------------------------------------------------------
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2C3ABE;
+  z-index: 1; }
+  .container__img-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px; }
+    .container__img-logo img {
+      height: 48px; }
+  .container__menu-lista {
+    position: relative;
+    text-align: center;
+    padding-bottom: 8px;
+    width: 100%; }
+    .container__menu-lista .item-menu-lista {
+      display: inline-block;
+      font-size: 16px; }
+    .container__menu-lista li:nth-child(2) {
+      margin: 0 10vw 0 10vw; }
+
+.main {
+  background-image: linear-gradient(30deg, #708090, transparent);
+  background-repeat: no-repeat;
+  background-color: #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 110px;
+  height: 100%; }
+  .main__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 30px; }
+    .main__inner__title {
+      font-weight: bold;
+      font-size: 26px;
+      text-align: center;
+      text-shadow: 1px 1px #fff; }
+    .main__inner__form {
+      padding-top: 25px; }
+      .main__inner__form .email {
+        width: 100%;
+        padding: 5px; }
+      .main__inner__form .submit {
+        border: 0px;
+        background-color: #f1c40f;
+        border-radius: 2px;
+        text-transform: uppercase;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        cursor: pointer;
+        margin-top: 15px;
+        font-size: 1em;
+        font-weight: 900;
+        height: 30px; }
+      .main__inner__form .submit:hover {
+        background-color: orange; }
