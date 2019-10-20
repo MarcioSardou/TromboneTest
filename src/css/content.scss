@@ -1,11 +1,15 @@
-.main{
+body {
     background-image: linear-gradient(30deg,#708090, transparent);
     background-repeat: no-repeat;
     background-color: $cor-tela;
+    height: 100%;
+    position: relative;
+}
+.main{
     @include flex-start;
     position: relative;
     top: 110px;
-    height:100%;
+    margin-bottom: 150px;
 
     &__inner {
         @include flex-start;
@@ -23,7 +27,7 @@
             
             .email {
                 width: 100%;
-                padding:5px;
+                height: 25px;
             }
             .submit {
                 @include btn;
@@ -39,3 +43,17 @@
         }
     }
 }
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+ 
+    &__paragraph {
+ 
+       h1 {
+          font-size: 20px;
+          font-weight: bold;
+       }
+    }
+ }

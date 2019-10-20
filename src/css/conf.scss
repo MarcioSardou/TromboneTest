@@ -46,3 +46,9 @@ $cor-botao: #f1c40f;
     margin-right: 30%;
     cursor: pointer;
 }
+
+@mixin page-margin {
+    max-width: 800px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
