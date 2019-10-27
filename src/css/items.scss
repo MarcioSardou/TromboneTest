@@ -1,0 +1,39 @@
+.sales {
+   @include flex-start;
+   flex-direction: row;
+   @include page-margin;
+
+   @media #{$screen-phone} {
+      flex-direction: column;
+   }
+
+   
+   &__item {
+      background-color: #d4ebf2;
+      text-align: center;
+      font-weight: bold;
+      height: 280px;
+      width: 300px;
+      margin: 20px;
+
+      &__title {
+         background-color:$cor-menu-topo;
+         margin-bottom: 20px;
+         padding-top: 10px;
+         font-size: 20px;
+         height: 30px;
+      }
+      &__price {
+         font-size: 18px;
+         margin-bottom: 20px;
+      }
+      &__list {
+         margin-bottom: 20px;
+         font-weight: normal;
+      }
+      &__button {
+         @include btn;
+         height: 30px;
+      }
+   }
+}

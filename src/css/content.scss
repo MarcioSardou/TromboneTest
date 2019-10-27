@@ -4,12 +4,18 @@ body {
     background-color: $cor-tela;
     height: 100%;
     position: relative;
+    padding-bottom:100px; 
 }
 .main{
+    @include page-margin;
     @include flex-start;
     position: relative;
     top: 110px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
+
+    @media (max-width:600px) {
+        margin-bottom: 250px;
+    }
 
     &__inner {
         @include flex-start;
