@@ -4,7 +4,11 @@
    display: flex;
    flex-direction: column;
    align-items: baseline;
-   margin: auto;
+   max-width: 700px;
+
+   @media #{$screen-phone} {
+      align-items: center;
+   }
 
    h1 {
       font-weight: bold;
@@ -23,7 +27,7 @@
       font-size: 20px;
       text-align: justify;
       width: 86%;
-      margin: 20px 0 20px 0;
+      margin: 20px 0 60px 0;
       }
      
    }
