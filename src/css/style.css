@@ -80,6 +80,12 @@ table {
       @media only screen and (max-width: 600px) {
         .container__img-logo img {
           height: 45px; } }
+      @media (max-width: 360px) {
+        .container__img-logo img {
+          height: 40px; } }
+      @media (max-width: 320px) {
+        .container__img-logo img {
+          height: 35px; } }
   .container__menu-lista {
     position: relative;
     text-align: center;
